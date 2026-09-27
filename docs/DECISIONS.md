@@ -11,6 +11,7 @@
 | Geography | Nationwide US location search; documented source limitations |
 | Watchlist | Manual checks first |
 | Current task | Create repository and document agreed requirements before implementation |
+| Repository publication | Public GitHub repository at https://github.com/FarazBehlum/InventCheck; continue updating it as the project develops |
 
 ## Recorded implementation defaults
 
@@ -23,7 +24,7 @@ These are proposed engineering defaults derived from the agreed scope, not claim
 - Backend-controlled environment configuration; the UI reports mode and capability status.
 - Manual refresh uses the same provider pipeline as search, with no scheduler dependency.
 - Long-term history is conditional on source permissions; provider retention supersedes the original “save every check” wording.
-- Local Git repository first. Remote hosting and visibility are not chosen.
+- Local Git repository with public GitHub remote `FarazBehlum/InventCheck`; `main` tracks `origin/main`.
 
 ## Facts to resolve during implementation
 

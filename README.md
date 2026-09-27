@@ -39,4 +39,4 @@ The implementation must include `.env.example`, backend tests, frontend build in
 
 Nationwide location support does not guarantee nationwide live inventory. Retailer prices, quantities, access, and data retention depend on verified source capabilities. Demo data will be synthetic. Inventory and pricing can change quickly; users must verify with the retailer before traveling.
 
-This is a local Git repository. A remote hosting provider, account, repository visibility, and publication have not been selected.
+The public repository is [FarazBehlum/InventCheck](https://github.com/FarazBehlum/InventCheck). The local `main` branch tracks `origin/main`. Keep the specification, decisions, and implementation status current as the project develops.
