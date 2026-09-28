@@ -31,3 +31,10 @@ htmlcov/
 .DS_Store
 .idea/
 .vscode/
+
+# Isolated development worktrees
+.worktrees/
+# Frontend compiler/browser-test artifacts
+*.tsbuildinfo
+test-results/
+playwright-report/
