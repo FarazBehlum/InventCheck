@@ -10,7 +10,7 @@
 | Credentials | None currently available; demo must not require them |
 | Geography | Nationwide US location search; documented source limitations |
 | Watchlist | Manual checks first |
-| Current task | Create repository and document agreed requirements before implementation |
+| Current task | Implement the documented working local demo |
 | Repository publication | Public GitHub repository at https://github.com/FarazBehlum/InventCheck; continue updating it as the project develops |
 
 ## Recorded implementation defaults
@@ -40,3 +40,14 @@ These are proposed engineering defaults derived from the agreed scope, not claim
 ## Deferred
 
 Scheduled checks, always-on hosting, email/SMS/push, paid data services, multi-user accounts, Supabase migration, and additional retailers. Changes require a documented scope update; no purchase is implied by future consideration.
+
+## Implementation decisions (2026-09-27)
+
+- User requested the installed using-git-worktrees skill. Work continues on `feature/mvp` in `.worktrees/mvp`; the project-local worktree directory is ignored by Git. No native worktree tool was available, so Git worktree was used.
+- ZIP coordinates: bundled GeoNames US postal snapshot, CC BY 4.0, transformed to 40,977 ZIP rows covering 50 states and DC. No runtime geocoding request.
+- The four demo products have inline UPC/GTIN/model fields and retailer listings hold SKU. A separate identifier table is deferred until multiple identifiers per type are needed.
+- Preferred retailers are a validated bounded JSON list on each watchlist row rather than a join table. SQLAlchemy JSON remains portable; a join table can be migrated in later.
+- Alerts require an In stock or Limited stock offer at or below target. Unknown/out-of-stock offers do not trigger shopping alerts.
+- Demo fixtures have no retailer product URL because fictional products do not have actual retailer listings.
+- Live adapters remain explicitly unavailable: no approved credentials or verified suitable unauthenticated access. Enabling a live source requires its catalog persistence and full retention policy as documented in RETAILERS.md.
+- No automatic HTTP retries are implemented for demo/unavailable adapters because they make no network requests. Live retry policy belongs to each future provider’s verified rules.

@@ -1,6 +1,6 @@
 # Implementation prompt
 
-Use the following prompt when ready to begin development:
+Historical consolidated build prompt. The demo has now been implemented; consult README.md and docs/VERIFICATION.md for current status before using this as a scope reference:
 
 ---
 
