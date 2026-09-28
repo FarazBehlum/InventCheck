@@ -2,7 +2,7 @@
 
 Read README.md, docs/SPEC.md, docs/DECISIONS.md, ARCHITECTURE.md, RETAILERS.md, and docs/IMPLEMENTATION_PLAN.md before implementation.
 
-This repository currently contains planning documents only. Do not claim that application code, integrations, tests, or workflows exist until implemented and verified. The original request is historical; later confirmed decisions in the specification and decision log take precedence.
+The local demo is implemented on feature/mvp in an isolated worktree. Read docs/VERIFICATION.md for executed checks and limitations. Do not claim live integrations or unverified workflows exist. The original request is historical; later confirmed decisions in the specification and decision log take precedence.
 
 - Keep the MVP local, single-user, and free of paid dependencies.
 - Implement manual watchlist checks first. Scheduling and external notifications are future work.

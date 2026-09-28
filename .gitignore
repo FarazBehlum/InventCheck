@@ -38,3 +38,7 @@ htmlcov/
 *.tsbuildinfo
 test-results/
 playwright-report/
+
+# SQLite journal/sidecar files
+*.sqlite3-*
+*.sqlite-*
